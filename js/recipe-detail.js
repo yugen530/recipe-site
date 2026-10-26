@@ -61,6 +61,21 @@ function createDetail() {
     stepList.append(li);
   });
 
+  // 参考にしたレシピ
+  let source = null;
+
+  if (recipe.sourceUrl) {
+    source = document.createElement("p");
+
+    const link = document.createElement("a");
+    link.href = recipe.sourceUrl;
+    link.textContent = recipe.sourceUrl;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+
+    source.append("参考レシピ：", link);
+  }
+
   detailContainer.replaceChildren(
     title,
     image,
@@ -71,6 +86,11 @@ function createDetail() {
     stepsTitle,
     stepList
   );
+
+  // 参考URLがある場合だけ末尾に表示
+  if (source) {
+    detailContainer.append(source);
+  }
 }
 
 createDetail();
