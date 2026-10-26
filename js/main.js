@@ -3,6 +3,10 @@ const recipeList = document.getElementById("recipe-list");
 const searchInput = document.getElementById("search-input");
 const noResults = document.getElementById("no-results");
 
+// 追加した絞り込み欄を取得
+const categoryFilter = document.getElementById("category-filter");
+const timeFilter = document.getElementById("time-filter");
+
 // レシピ一覧を画面に表示する
 function displayRecipes(recipeData) {
   recipeList.replaceChildren();
@@ -40,17 +44,31 @@ function displayRecipes(recipeData) {
   noResults.hidden = recipeData.length > 0;
 }
 
-// 検索処理
+// 検索・絞り込み処理
 function searchRecipes() {
-  // 検索欄の文字を取得し、空白でキーワードを分割する
+  // 検索欄の文字を空白で分割する
   const keywords = searchInput.value
     .trim()
     .toLowerCase()
     .split(/\s+/)
     .filter((keyword) => keyword !== "");
 
-  // すべてのキーワードに一致するレシピを探す
+  // 選択されたカテゴリと調理時間
+  const selectedCategory = categoryFilter.value;
+  const maxTime = timeFilter.value;
+
+  // すべての条件に合うレシピを探す
   const filteredRecipes = recipes.filter((recipe) => {
+    // カテゴリが一致するか
+    const matchesCategory =
+      selectedCategory === "" ||
+      recipe.category === selectedCategory;
+
+    // 調理時間が指定以内か
+    const matchesTime =
+      maxTime === "" ||
+      recipe.cookingTime <= Number(maxTime);
+
     // レシピ名・カテゴリ・説明・材料名を検索対象にする
     const searchableText = [
       recipe.name,
@@ -61,19 +79,26 @@ function searchRecipes() {
       .join(" ")
       .toLowerCase();
 
-    // すべてのキーワードが検索対象に含まれているか確認する
-    return keywords.every((keyword) =>
+    // すべてのキーワードが含まれているか
+    const matchesKeywords = keywords.every((keyword) =>
       searchableText.includes(keyword)
     );
+
+    // すべての条件を満たした場合だけ表示する
+    return matchesCategory && matchesTime && matchesKeywords;
   });
 
-  // 検索結果を画面に表示する
   displayRecipes(filteredRecipes);
 }
 
-
-// 入力するたびに検索
+// 検索欄への入力で検索
 searchInput.addEventListener("input", searchRecipes);
+
+// カテゴリ変更で検索
+categoryFilter.addEventListener("change", searchRecipes);
+
+// 調理時間変更で検索
+timeFilter.addEventListener("change", searchRecipes);
 
 // 初期表示
 displayRecipes(recipes);

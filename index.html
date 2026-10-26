@@ -18,11 +18,35 @@
   <main>
     <section class="search-section">
       <h2>レシピを探す</h2>
+
       <input
         id="search-input"
         type="search"
         placeholder="料理名・材料で検索"
       >
+
+      <!-- カテゴリ・調理時間の絞り込み -->
+      <div class="filter-controls">
+        <div class="filter-item">
+          <label for="category-filter">カテゴリ</label>
+          <select id="category-filter">
+            <option value="">すべて</option>
+            <option value="主菜">主菜</option>
+            <option value="主食">主食</option>
+            <option value="汁物">汁物</option>
+          </select>
+        </div>
+
+        <div class="filter-item">
+          <label for="time-filter">調理時間</label>
+          <select id="time-filter">
+            <option value="">指定なし</option>
+            <option value="15">15分以内</option>
+            <option value="20">20分以内</option>
+            <option value="30">30分以内</option>
+          </select>
+        </div>
+      </div>
     </section>
 
     <section>
