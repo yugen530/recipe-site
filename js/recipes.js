@@ -7,7 +7,6 @@ const recipes = [
     cookingTime: 60, //調理時間
     servings: 3, // 何人前
     image: "images/Mabodoufu.jpeg",
-    description: "甘辛いタレが鶏肉によく絡む、ご飯に合う定番料理です。",
     ingredients: [
       { name: "玉ねぎ", amount: "1/4個" },
       { name: "にんじん", amount: "1/2本" },
