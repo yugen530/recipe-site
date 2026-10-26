@@ -42,32 +42,35 @@ function displayRecipes(recipeData) {
 
 // 検索処理
 function searchRecipes() {
-  const keyword = searchInput.value.trim().toLowerCase();
+  // 検索欄の文字を取得し、空白でキーワードを分割する
+  const keywords = searchInput.value
+    .trim()
+    .toLowerCase()
+    .split(/\s+/)
+    .filter((keyword) => keyword !== "");
 
+  // すべてのキーワードに一致するレシピを探す
   const filteredRecipes = recipes.filter((recipe) => {
-    // 料理名・カテゴリを検索
-    const matchesName =
-      recipe.name.toLowerCase().includes(keyword);
+    // レシピ名・カテゴリ・説明・材料名を検索対象にする
+    const searchableText = [
+      recipe.name,
+      recipe.category,
+      recipe.description,
+      ...recipe.ingredients.map((ingredient) => ingredient.name)
+    ]
+      .join(" ")
+      .toLowerCase();
 
-    const matchesCategory =
-      recipe.category.toLowerCase().includes(keyword);
-
-    // 材料名を検索
-    const matchesIngredient = recipe.ingredients.some(
-      (ingredient) =>
-        ingredient.name.toLowerCase().includes(keyword)
-    );
-
-    return (
-      keyword === "" ||
-      matchesName ||
-      matchesCategory ||
-      matchesIngredient
+    // すべてのキーワードが検索対象に含まれているか確認する
+    return keywords.every((keyword) =>
+      searchableText.includes(keyword)
     );
   });
 
+  // 検索結果を画面に表示する
   displayRecipes(filteredRecipes);
 }
+
 
 // 入力するたびに検索
 searchInput.addEventListener("input", searchRecipes);
