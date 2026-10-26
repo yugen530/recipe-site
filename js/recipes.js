@@ -6,7 +6,7 @@ const recipes = [
     category: "主菜", //料理分類
     cookingTime: 60, //調理時間
     servings: 3, // 何人前
-    image: "images/teriyaki.jpg",
+    image: "images/Mabodoufu.jpeg",
     description: "甘辛いタレが鶏肉によく絡む、ご飯に合う定番料理です。",
     ingredients: [
       { name: "玉ねぎ", amount: "1/4個" },
@@ -106,7 +106,7 @@ const recipes = [
     category: "デザート",
     cookingTime: 30,
     servings: 2,
-    image: "images/miso-soup.jpg",
+    image: "images/YogurtCake.jpeg",
     ingredients: [
       { name: "ビスケット", amount: "100g" },
       { name: "バター", amount: "50g" },
@@ -129,7 +129,7 @@ const recipes = [
     category: "デザート",
     cookingTime: 180,
     servings: 2,
-    image: "images/miso-soup.jpg",
+    image: "images/Pudding.jpeg",
     ingredients: [
       { name: "グラニュー糖(カラメル用)", amount: "60g" },
       { name: "水(カラメル用)", amount: "大さじ1杯" },
