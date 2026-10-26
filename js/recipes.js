@@ -11,6 +11,7 @@ const recipes = [
     ingredients: [
       { name: "玉ねぎ", amount: "1/4個" },
       { name: "にんじん", amount: "1/2本" },
+      { name: "きざみねぎ", amount: "適量" },
       { name: "豆腐", amount: "1丁" },
       { name: "丸美屋麻婆豆腐の素(中辛)", amount: "1袋" },
       { name: "トロミ粉", amount: "1袋" },
