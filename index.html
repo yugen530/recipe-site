@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>おうちレシピ</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/recipes.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <h1>おうちレシピ</h1>
+    <p>毎日の料理を、もっと楽しく。</p>
+  </header>
+
+  <main>
+    <section class="search-section">
+      <h2>レシピを探す</h2>
+      <input
+        id="search-input"
+        type="search"
+        placeholder="料理名・材料で検索"
+      >
+    </section>
+
+    <section>
+      <h2>レシピ一覧</h2>
+      <div id="recipe-list" class="recipe-grid"></div>
+      <p id="no-results" hidden>レシピが見つかりませんでした。</p>
+    </section>
+  </main>
+</body>
+</html>
