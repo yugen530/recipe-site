@@ -31,7 +31,7 @@ const recipes = [
   },
   {
     id: 2,
-    name: "ナポリタン",
+    name: "ミートソーススパゲティ(作成中)",
     category: "主食",
     cookingTime: 15,
     servings: 2,
@@ -54,7 +54,7 @@ const recipes = [
   },
   {
     id: 3,
-    name: "肉じゃが",
+    name: "ハヤシライス(作成中)",
     category: "主菜",
     cookingTime: 35,
     servings: 2,
@@ -79,25 +79,27 @@ const recipes = [
   },
   {
     id: 4,
-    name: "野菜たっぷり味噌汁",
+    name: "味噌汁",
     category: "汁物",
     cookingTime: 15,
     servings: 2,
     image: "images/miso-soup.jpg",
     description: "冷蔵庫にある野菜で作れる、ほっとする味噌汁です。",
     ingredients: [
-      { name: "キャベツ", amount: "2枚" },
-      { name: "にんじん", amount: "1/3本" },
-      { name: "豆腐", amount: "150g" },
-      { name: "だし汁", amount: "400ml" },
-      { name: "味噌", amount: "大さじ2" }
+      { name: "玉ねぎ", amount: "1/4個" },
+      { name: "豆腐", amount: "1/4丁" },
+      { name: "乾燥わかめ", amount: "適量" },
+      { name: "乾燥わけさ", amount: "適量" },
+      { name: "だし入り味噌", amount: "32g" },
+      { name: "水", amount: "320cc" }
     ],
     steps: [
-      "野菜と豆腐を食べやすい大きさに切ります。",
-      "鍋にだし汁と野菜を入れて煮ます。",
-      "野菜が柔らかくなったら豆腐を加えます。",
-      "火を弱めて味噌を溶き入れたら完成です。"
-    ]
+      "玉ねぎ1/4個をくし切りにします。",
+      "水320ccを鍋に入れて、乾燥わかめと玉ねぎをいれて煮立たせます。",
+      "水が沸騰したら火を止めて、沸騰が治まったら味噌を溶き入れます。",
+      "火を弱めて味噌を溶き入れたら、沸騰する直前まで加熱して完成です。"
+    ],
+    sourceUrl: "https://www.marukome.co.jp/recipe/misosoup/recipe/easy/",
   },
   {
     id: 5,
@@ -124,6 +126,30 @@ const recipes = [
   },
   {
     id: 6,
+    name: "ベイクドチーズケーキ(作成中)",
+    category: "デザート",
+    cookingTime: 120,
+    servings: 2,
+    image: "images/BakedCheeseCake.jpeg",
+    ingredients: [
+      { name: "ビスケット", amount: "100g" },
+      { name: "バター", amount: "50g" },
+      { name: "牛乳", amount: "100mL" },
+      { name: "ゼラチン", amount: "10g" },
+      { name: "無糖ヨーグルト", amount: "400g" },
+      { name: "レモン汁", amount: "大さじ1"}
+    ],
+    steps: [
+      "ビスケットを細かく砕いて、溶かしバターを加えてよくかき混ぜる。溶かしバターは電子レンジでラップをして作る。(バターは跳ねます)",
+      "生地を型に敷き詰めて、そこが平らコップやスプーンを使って押し固める。",
+      "牛乳100mLを600Wで40~50秒温めて、ゼラチン10gを入れて溶かす。",
+      "3. に砂糖60~70g、無糖ヨーグルト400g、レモン汁大さじ1杯の順に入れてよく混ぜる。",
+      "型に流しいれて冷やし固めて完成。"
+    ],
+    sourceUrl: "https://delishkitchen.tv/recipes/135430820792893825",
+  },
+  {
+    id: 7,
     name: "プリン",
     category: "デザート",
     cookingTime: 180,
