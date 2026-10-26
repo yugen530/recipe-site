@@ -2,7 +2,7 @@
 const recipes = [
   {
     id: 1,
-    name: "麻婆豆腐", // 料理名
+    name: "麻婆豆腐(丸美屋の麻婆豆腐の素使用)", // 料理名
     category: "主菜", //料理分類
     cookingTime: 60, //調理時間
     servings: 3, // 何人前
