@@ -59,7 +59,6 @@ const recipes = [
     cookingTime: 35,
     servings: 2,
     image: "images/nikujaga.jpg",
-    description: "じゃがいもとお肉を甘辛く煮込んだ、家庭料理の定番です。",
     ingredients: [
       { name: "牛肉または豚肉", amount: "150g" },
       { name: "じゃがいも", amount: "2個" },
@@ -176,6 +175,126 @@ const recipes = [
       "カップの底をお湯で温めて、カラメルを溶かし、皿を乗せて上下をひっくり返して取り出す。"
     ],
     sourceUrl: "https://delishkitchen.tv/recipes/135430820792893825",
+  },
+  {
+    id: 8,
+    name: "カレーライス(作成中)",
+    category: "主菜",
+    cookingTime: 35,
+    servings: 2,
+    image: "images/nikujaga.jpg",
+    ingredients: [
+      { name: "牛肉または豚肉", amount: "150g" },
+      { name: "じゃがいも", amount: "2個" },
+      { name: "玉ねぎ", amount: "1個" },
+      { name: "にんじん", amount: "1/2本" },
+      { name: "醤油", amount: "大さじ2" },
+      { name: "みりん", amount: "大さじ2" },
+      { name: "砂糖", amount: "大さじ1" },
+      { name: "水", amount: "200ml" }
+    ],
+    steps: [
+      "肉と野菜を食べやすい大きさに切ります。",
+      "鍋で肉を炒め、野菜を加えてさらに炒めます。",
+      "水と調味料を加え、落とし蓋をして煮込みます。",
+      "じゃがいもが柔らかくなったら完成です。"
+    ]
+  },
+  {
+    id: 9,
+    name: "たこ焼き(作成中)",
+    category: "主菜",
+    cookingTime: 35,
+    servings: 2,
+    image: "images/nikujaga.jpg",
+    ingredients: [
+      { name: "牛肉または豚肉", amount: "150g" },
+      { name: "じゃがいも", amount: "2個" },
+      { name: "玉ねぎ", amount: "1個" },
+      { name: "にんじん", amount: "1/2本" },
+      { name: "醤油", amount: "大さじ2" },
+      { name: "みりん", amount: "大さじ2" },
+      { name: "砂糖", amount: "大さじ1" },
+      { name: "水", amount: "200ml" }
+    ],
+    steps: [
+      "肉と野菜を食べやすい大きさに切ります。",
+      "鍋で肉を炒め、野菜を加えてさらに炒めます。",
+      "水と調味料を加え、落とし蓋をして煮込みます。",
+      "じゃがいもが柔らかくなったら完成です。"
+    ]
+  },
+  {
+    id: 10,
+    name: "豚の生姜焼き(作成中)",
+    category: "主菜",
+    cookingTime: 35,
+    servings: 2,
+    image: "images/nikujaga.jpg",
+    ingredients: [
+      { name: "牛肉または豚肉", amount: "150g" },
+      { name: "じゃがいも", amount: "2個" },
+      { name: "玉ねぎ", amount: "1個" },
+      { name: "にんじん", amount: "1/2本" },
+      { name: "醤油", amount: "大さじ2" },
+      { name: "みりん", amount: "大さじ2" },
+      { name: "砂糖", amount: "大さじ1" },
+      { name: "水", amount: "200ml" }
+    ],
+    steps: [
+      "肉と野菜を食べやすい大きさに切ります。",
+      "鍋で肉を炒め、野菜を加えてさらに炒めます。",
+      "水と調味料を加え、落とし蓋をして煮込みます。",
+      "じゃがいもが柔らかくなったら完成です。"
+    ]
+  },
+    {
+    id: 11,
+    name: "餃子(作成中)",
+    category: "主菜",
+    cookingTime: 35,
+    servings: 2,
+    image: "images/nikujaga.jpg",
+    ingredients: [
+      { name: "牛肉または豚肉", amount: "150g" },
+      { name: "じゃがいも", amount: "2個" },
+      { name: "玉ねぎ", amount: "1個" },
+      { name: "にんじん", amount: "1/2本" },
+      { name: "醤油", amount: "大さじ2" },
+      { name: "みりん", amount: "大さじ2" },
+      { name: "砂糖", amount: "大さじ1" },
+      { name: "水", amount: "200ml" }
+    ],
+    steps: [
+      "肉と野菜を食べやすい大きさに切ります。",
+      "鍋で肉を炒め、野菜を加えてさらに炒めます。",
+      "水と調味料を加え、落とし蓋をして煮込みます。",
+      "じゃがいもが柔らかくなったら完成です。"
+    ]
+  },
+  {
+    id: 12,
+    name: "そうめん(作成中)",
+    category: "主菜",
+    cookingTime: 35,
+    servings: 2,
+    image: "images/nikujaga.jpg",
+    ingredients: [
+      { name: "牛肉または豚肉", amount: "150g" },
+      { name: "じゃがいも", amount: "2個" },
+      { name: "玉ねぎ", amount: "1個" },
+      { name: "にんじん", amount: "1/2本" },
+      { name: "醤油", amount: "大さじ2" },
+      { name: "みりん", amount: "大さじ2" },
+      { name: "砂糖", amount: "大さじ1" },
+      { name: "水", amount: "200ml" }
+    ],
+    steps: [
+      "肉と野菜を食べやすい大きさに切ります。",
+      "鍋で肉を炒め、野菜を加えてさらに炒めます。",
+      "水と調味料を加え、落とし蓋をして煮込みます。",
+      "じゃがいもが柔らかくなったら完成です。"
+    ]
   },
 ];
 
