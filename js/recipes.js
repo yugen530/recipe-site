@@ -276,7 +276,7 @@ const recipes = [
     id: 12,
     name: "そうめん(作成中)",
     category: "主食",
-    cookingTime: 35,
+    cookingTime: 20,
     servings: 1,
     image: "images/nikujaga.jpg",
     ingredients: [
