@@ -300,7 +300,7 @@ const recipes = [
     category: "副菜",
     cookingTime: 10,
     servings: 2,
-    image: "images/nikujaga.jpg",
+    image: "images/Tamagoyaki_sweet.jpeg",
     description: "写真は砂糖の小さじを大さじにしました。温かく見守ってください。",
     ingredients: [
       { name: "卵", amount: "2個" },
