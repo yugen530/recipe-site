@@ -278,7 +278,7 @@ const recipes = [
     category: "主食",
     cookingTime: 20,
     servings: 1,
-    image: "images/Soumen.jpg",
+    image: "images/Soumen.jpeg",
     ingredients: [
       { name: "そうめん", amount: "2束" },
       { name: "水(茹で用)", amount: "1L" },
