@@ -168,11 +168,27 @@ section {
    6. スマートフォン対応
 ========================= */
 
-@media (max-width: 600px) {
-  .site-header {
-    padding: 28px 16px;
-  }
 
+/* =========================
+   6. 画面サイズ対応
+========================= */
+
+/* PC：1行4個 */
+.recipe-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+}
+
+/* タブレット：1行3個 */
+@media (max-width: 900px) {
+  .recipe-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 15px;
+  }
+}
+
+/* スマホ：1行2個 */
+@media (max-width: 600px) {
   .site-header h1 {
     font-size: 1.7rem;
   }
@@ -187,10 +203,11 @@ section {
   }
 
   .recipe-grid {
-    grid-template-columns: 1fr;
-    gap: 18px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
   }
 }
+
 
 
 /* =========================
