@@ -274,9 +274,9 @@ const recipes = [
   },
   {
     id: 12,
-    name: "そうめん(作成中)",
+    name: "そうめん",
     category: "主食",
-    cookingTime: 20,
+    cookingTime: 15,
     servings: 1,
     image: "images/Soumen.jpeg",
     ingredients: [
